@@ -30,7 +30,7 @@ const Report = () => {
       setLoading(true)
 
       // ✅ Fetch from backend
-      const res = await axios.get("http://localhost:4000/api/reports/getReport", {
+      const res = await axios.get("https://health-e-backend-prod.onrender.com/api/reports/getReport", {
         params: { phone, date }
       })
 
